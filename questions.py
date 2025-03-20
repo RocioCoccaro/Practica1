@@ -25,7 +25,7 @@ answers = [
 correct_answers_index = [1, 2, 0, 3, 1]
 
 # Unimos todas las listas con zip para evitar acceder mediante índices
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 puntaje = 0 ##Inicializo puntaje en cero
 
